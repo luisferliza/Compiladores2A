@@ -3,7 +3,7 @@
 Public Class Declaracion
     Implements Instruccion
 
-    ' Alamacena el identificador con el que se guardara una variable
+    ' Almacena el identificador con el que se guardara una variable
     Private ReadOnly id As String
 
     ' Almacena el tipo de la variable que se quiere declarar
