@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>
+        Binary to Dec
+    </title>
+    <style>
+        .button {
+            background-color: #555555;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <H1>DDS Online</H1>
+    <textarea id="Entrada" rows="10" cols="100">Ingrese aqui la entrada:</textarea>
+    <br />
+    <button onclick="Analyze()" class="button">
+        Ejecutar!
+    </button>
+    <br />
+    <br />
+    <textarea id="Consola" rows="10" cols="50">Texto de Salida...</textarea>
+</body>
+
+<script>
+    function Analyze() {
+        let entrada = document.getElementById("Entrada").value;
+        var res = Analyzer.parse(entrada);
+        document.getElementById("Consola").value = res;        
+    }
+</script>
+<script src="Analyzer.js"></script>
+
+</html>
